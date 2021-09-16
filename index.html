@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title> Lista de tareas </title>
+</head>
+<body>
+
+<div class="contenedor">
+    <h1> Administrador de tareas </h1>
+       <div id="fecha">
+            <div id="fechaderecha"> 
+              <div id="numerito"> </div>
+            </div> <!--termina fecha derecha-->
+       </div> <!-- termina fecha-->
+      <div>
+          <div id="mes"></div>
+          <div id="año"></div>
+      </div> <!-- termina el div sin clase de mes-año -->
+      <div>
+          <div id="dia"> </div>
+      </div>
+      <form onsubmit="nuevo(event)"> 
+         <input type="text" name="ingresarTarea" autocomplete="off" placeholder="Nueva tarea" class="el">   
+         <button type="submit" class="boton"> + </button>
+         <button type="button" id="btn" class="botonOrdenar" onclick="ordenarTareas()"> Ordenar </button>
+      </form>
+      <div id="contenedorTareas"> </div>
+</div> <!-- termina el contenedor-->
+</body>
+</html>
